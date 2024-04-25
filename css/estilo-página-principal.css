@@ -1,0 +1,426 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+.cabecalho{
+    height: 1000px;
+   border-bottom-right-radius: 50%;
+   border-bottom-left-radius: 50%;
+    background-color:#DCF4CE;
+    display:grid;
+   grid-template-columns: repeat(5,400px);
+   grid-template-rows: repeat(3, 300px);
+   grid-template-areas:
+   "logo logo medico"
+   "texto texto medico"
+   "botao botao medico"
+}
+ .cabecalho a{
+    text-decoration: none;
+    background-color: #5EC57E;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 250px;
+    padding: 20px;
+    border-radius:50px;
+    align-self: start;
+    margin-left: 150px;
+    grid-row-start: 3;
+    grid-area: botao;
+    text-align: center;
+}
+.cabecalho a:hover{
+    background-color:#347571;
+}
+.logo{
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    grid-area:logo;
+}
+.texto{
+    position: relative;
+    bottom: 160px;
+    width: 1000px;
+    height: 450px;
+    margin-left: 500px;
+    font-size: 85px;
+    font-weight:100;
+    color:#347571;
+    align-self: start;
+    justify-self: center;
+    grid-row-start: 2;
+    grid-area: texto;
+}
+.medico{
+    clip-path: circle(500px);
+    width: 100em;
+    height: 60em;
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-area: medico;
+    position: relative;
+    left: 90px;
+    top: 10px;
+    bottom: 250px;
+    top: 0px;
+} 
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+.sobre-nos{
+    height: 70em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nos img{
+    width: 600px;
+    height: 560px;
+   
+}
+.texto-sobre-nos{
+    width: 1000px;
+    margin-left: 80px;
+}
+.texto-sobre-nos h2{
+    position: relative;
+    left: 0px;
+    color:#5EC57E;
+    font-weight: 100;
+    font-size: 45px;
+}
+
+.texto-sobre-nos p{
+    position: relative;
+    right: 0px;
+    color: #347571;
+    font-size: 45px;
+}
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------*/
+.nossos-servicos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.servicos-container{
+    display: flex;
+}
+.nossos-servicos h2{
+   padding: 40px;
+   font-size: 50px;
+   color:#5EC57E;
+   text-align: center;
+}
+.nossos-servicos img{
+    width: 400px;
+}
+
+.servico-1{
+    width: 650px;
+    height: 750px;
+    color:#347571;
+    background-color: #F7FDF3;
+    text-align: center;
+
+}
+.servico-1 h3{
+    color: #5EC57E;
+    margin-bottom: 50px;
+    font-size: 45px;
+}
+.servico-1 p{
+    position: relative;
+    left: 135px;
+    width: 400px;
+    font-size: 25px;
+}
+.servico-2{
+    width: 650px;
+    height: 750px;
+    color:#347571;
+    background-color: #ECF8E5;
+    text-align: center;
+}
+.servico-2 h3{
+    color: #5EC57E;
+    margin-bottom: 50px;
+    font-size: 45px;
+}
+
+.servico-2 p{
+    position: relative;
+    left: 135px;
+    width: 400px;
+    font-size: 25px;
+}
+
+.servico-3{
+    width: 650px;
+    height: 750px;
+    color:#347571;
+    background-color: #DCF4CE;
+    text-align: center;
+}
+.servico-3 img{
+    position: relative;
+    right: 35px;
+}
+.servico-3 h3{
+    color: #5EC57E;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    font-size: 45px;
+    position: relative;
+    right: 25px;
+}
+
+.servico-3 p{
+    position: relative;
+    left: 105px;
+    width: 400px;
+    font-size: 25px;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.beneficios-de-uma-consulta{
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas:
+    "beneficios beneficios beneficios consulta"
+    "bene bene bene consulta"
+    "bene bene bene consulta"
+    "bene bene bene consulta"
+}
+
+.beneficios-de-uma-consulta h2{
+    color: #5EC57E;
+    width: 450px;
+    margin-left: 60px;
+    font-size: 50px;
+    font-weight: 80;
+    align-self: end;
+    padding-bottom: 5px;
+    grid-area: beneficios;
+}
+.beneficios-de-uma-consulta p{
+    color:#347571;
+    font-size: 40px;
+    justify-self: start;
+    align-self: center;
+    line-height: 67px;
+    grid-area: bene;
+    margin-left: 60px;
+}
+
+.beneficios-de-uma-consulta img{
+    height: 918px;
+    position: absolute;
+    left: 1410px;
+    grid-area: consulta;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.nossos-pacientes{
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #347571;
+    height: 900px;
+    overflow-y: hidden;
+}
+
+.nossos-pacientes h2{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight:100;
+    overflow-y: hidden;
+}
+
+.container-pacientes{
+    margin: 28px;
+    position: relative;
+    top: 50px;
+    overflow-y: hidden;
+    display: grid;   
+    grid-template-columns: repeat(2, 1000px);
+    grid-template-rows: repeat(2, 400px)
+}
+
+.container-pacientes img{
+    width: 100px;
+}
+
+.paciente-1{
+    background-color: #DCF4CE;
+    padding: 20px;
+    border-radius: 40px;
+    width: 750px;
+    height: 260px;
+    text-align:left;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-areas:
+    "user1 coment1"
+    "user1 coment1"
+    "user1  nome1"
+}
+.paciente-1 img{
+    grid-area: user1;
+}
+#comentario-1{
+    position: relative;
+    right: 385px;
+    font-size: 30px;
+    align-self: end;
+    grid-area: coment1;
+}
+#nome-do-comentarista-1{
+    grid-area: nome1;
+}
+
+.paciente-2{
+    background-color: #35B276;
+    color: #ECF8E5;
+    border-radius: 40px;
+    text-align:left;
+    width: 750px;
+    height: 260px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-areas:
+    "user2 coment2"
+    "user2 coment2"
+    "user2  nome2"
+}
+.paciente-2 img{
+    color: #ECF8E5;
+    grid-area: user2;
+}
+#comentario-2{
+    position: relative;
+    right: 385px;
+    font-size: 30px;
+    align-self: end;
+    grid-area: coment2;
+}
+#nome-do-comentarista-2{
+    grid-area: nome2;
+}
+
+.paciente-3{
+    background-color: #35B276;
+    color: #ECF8E5;
+    border-radius: 40px;
+    text-align:left;
+    width: 750px;
+    height: 260px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-areas:
+    "user3 coment3"
+    "user3 coment3"
+    "user3  nome3"
+}
+.paciente-3 img{
+    grid-area: user3;
+}
+#comentario-3{
+    position: relative;
+    right: 385px;
+    font-size: 30px;
+    align-self: end;
+    grid-area: coment3;
+}
+#nome-do-comentarista-3{
+    grid-area: nome3;
+}
+
+
+.paciente-4{
+    background-color: #DCF4CE;
+    border-radius: 40px;
+    text-align:left;
+    width: 750px;
+    height: 260px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-areas:
+    "user4 coment4"
+    "user4 coment4"
+    "user4  nome4"
+}
+
+.paciente-4 img{
+    grid-area: user4;
+}
+#comentario-4{
+    position: relative;
+    right: 385px;
+    font-size: 25px;
+    align-self: end;
+    grid-area: coment4;
+}
+#nome-do-comentarista-4{
+    grid-area: nome4;
+}
+/*----------------------------------------------------------------------------------------------------------------------------------*/
+
+.planos-tele-consulta{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #ECF8E5;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 950px;
+}
+
+.planos-tele-consulta img{
+    width: 400px;
+}
+#conheca{
+    font-size: 80px;
+    color: #347571;
+}
+
+.planos-tele-consulta a{
+    background-color: #347571;
+    color: white;
+    padding: 20px;
+    font-size: 30px;
+    width: 400px;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    margin: 40px;
+}
+
+.planos-tele-consulta a:hover{
+    background-color:#35B276;
+    color:#DCF4CE;
+}
+
+.telefone{
+    position: relative;
+    top: 200px;
+}
+
+#tel{
+    color:#347571;
+}
+#numero{
+    color: #5EC57E;
+    font-size: 30px;
+}

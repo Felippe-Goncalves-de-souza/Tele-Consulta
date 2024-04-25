@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 905px;
+}
+main{
+    color: #347571;
+}
+h1{
+    position: relative;
+    bottom: 200px;
+    font-size: 50px;
+    font-weight: 100;
+}
+.container-planos{
+    display: flex;
+}
+
+.plano{
+    background-color: #DCF4CE;
+    width: 500px;
+    height: 195px;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 35px;
+}
+
+.plano-mensal{
+    height: 300px;
+    text-align: center;
+}
+.plano-mensal h3{
+    font-size: 50px;
+    padding-top: 20px;
+    overflow-y: hidden;
+}
+.plano-mensal p{
+    position: relative;
+    top: 40px;
+    left: 25px;
+    font-size: 18px;
+    text-align: left;
+}
+.preco-mensal{
+    font-weight: bold;
+    font-size: 40px !important;
+    text-align: center !important;
+    position: relative;
+    left: 0px !important;
+    top: 50px !important;
+    overflow-y: hidden;
+}
+.consulta-avulsa{
+    position: relative;
+    top: 100px;
+}
+.consulta-avulsa h3{
+    position: relative;
+    top: 15px;
+    font-size: 30px;
+}
+
+.consulta-avulsa p{
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-size: 20px;
+    text-align: left;
+}
+.preco-avulsa{
+    font-weight: bold;
+    font-size: 30px !important;
+    text-align: center !important;
+    position: relative;
+    left: 0px !important;
+    top: 17px !important;
+}
+.plano-anual{
+    position: relative;
+    top: 100px; 
+}
+.plano-anual h3{
+    position: relative;
+    top: 15px;
+    font-size: 30px;
+}
+.plano-anual p{
+    position: relative;
+    top: 20px;
+    left: 25px;
+    font-size: 20px;
+    text-align: left;
+}
+.preco-anual{
+    font-weight: bold;
+    font-size: 30px !important;
+    text-align: center !important;
+    position: relative;
+    left: 0px !important;
+    top: 17px !important;
+}
+.caixa-verde-planos{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    height: 458px;
+    width: 1830px;
+    background-color: #ECF8E5;
+    position: absolute;
+    top: 450px;
+    z-index: -1;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+
+.pre-bono{
+    display: flex;
+}
+.texto-pre-bono{
+    width: 1005px;
+    margin-left: 30px;
+    margin-top: 200px;
+}
+.texto-pre-bono h2{
+   font-size: 60px; 
+   color: #00A651;
+}
+.texto-pre-bono p{
+    font-size: 30px;
+    color: #347571;
+}
+.imagem-pre-bono img{
+    clip-path: inset(0px 300px 0px 300px);
+    width: 1500px;
+    height: 920px;
+    position: absolute;
+    left: 860px;
+}
+
+.rodape{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    position: absolute;
+    top: 1600px;
+    height: 300px;
+    width: 1900px;
+    background-color:#DCF4CE;
+    color:#347571;
+    text-align: center;
+    padding: 60px;
+    line-height: 70px;
+}
+.rodape a{
+    color:#347571;
+    font-size: 40px;
+}
+.rodape p{
+    font-size: 30px;
+}
